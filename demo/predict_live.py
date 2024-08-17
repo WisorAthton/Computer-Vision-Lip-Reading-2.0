@@ -12,8 +12,14 @@ from collections import deque
 import tensorflow as tf
 import sys
 sys.path.append('../data')
-from constants import *
-from constants import TOTAL_FRAMES, VALID_WORD_THRESHOLD, NOT_TALKING_THRESHOLD, PAST_BUFFER_SIZE, LIP_WIDTH, LIP_HEIGHT
+# from constants import *
+# from constants import TOTAL_FRAMES, VALID_WORD_THRESHOLD, NOT_TALKING_THRESHOLD, PAST_BUFFER_SIZE, LIP_WIDTH, LIP_HEIGHT
+TOTAL_FRAMES = 22
+VALID_WORD_THRESHOLD = 1
+NOT_TALKING_THRESHOLD = 10
+PAST_BUFFER_SIZE = 4
+LIP_WIDTH = 112
+LIP_HEIGHT = 80
 
 
 label_dict = {6: 'hello', 5: 'dog', 10: 'my', 12: 'you', 9: 'lips', 3: 'cat', 11: 'read', 0: 'a', 4: 'demo', 7: 'here', 8: 'is', 1: 'bye', 2: 'can'}

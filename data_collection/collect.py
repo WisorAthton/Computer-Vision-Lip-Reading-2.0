@@ -32,8 +32,8 @@ not_talking_counter = 0
 
 
 
-data_count = 1
-words = ["here", "is", "a", "demo", "can", "you", "read", "my", "lips", "cat", "dog", "hello", "bye"]
+data_count = 0
+words = ["where", "is", "a", "demo", "can", "you", "read", "my", "lips", "cat", "dog", "hello", "bye"]
 options = ", ".join(words)
 label = input("What word you like to collect data for? The options are \n" + options + ": ")
 labels = []
